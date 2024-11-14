@@ -10,9 +10,16 @@ This prediction project is done in collaboration with our client Social Insider.
 
 It was a common agreement reached during our discussion with client Social Insider that Recall is the performance matrix we should optimize for. The core of the reason lies in the formula difference between recall and precision: 
 
-Recall = TP / (TP+FN) and Precision = TP = (TP+FP), Where: 
+_Recall = TP / (TP+FN), _
+
+_and Precision = TP = (TP+FP), _
+
+Where: 
+
 TP = True Positive (Users who would have subscribed and has correctly been predicted as positive subscribe user)
+
 FN = False Negative (Users who would have subscribed and has incorrectly been predicted as non-subscribe user)
+
 FP = False Positive (Users who would NOT have subscribed and has incorrectly been predicted as subscribe user)
 
 Optimizing recall tries minimizes False Negative (FN) which has a larger cost than False Positive (FP) in our scenario. Our current conversion rate is less than 1%. The cost of losing a user who would have subscribed (due to wrong prediction) is larger than the cost of extra marketing to users who would not have subscribed (no matter how much marketing they receive). Hence, we primarily use recall as the indicator matrix for choosing our best prediction model. 
