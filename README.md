@@ -10,9 +10,9 @@ This prediction project is done in collaboration with our client Social Insider.
 
 It was a common agreement reached during our discussion with client Social Insider that Recall is the performance matrix we should optimize for. The core of the reason lies in the formula difference between recall and precision: 
 
-`Recall = TP / (TP+FN)`, and 
+\textit{Recall = TP / (TP+FN)}, and 
 
-`Precision = TP = (TP+FP), `
+\textit{Precision = TP = (TP+FP),} 
 
 Where: 
 
