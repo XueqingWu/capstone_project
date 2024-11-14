@@ -4,7 +4,7 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 
 #### Final Project for IDS 707 Data Visualization Course
 
-The same information can be found in ![Capstone_Visual_Final_Project_IDS707.pdf](Capstone_Visual_Final_Project_IDS707.pdf) on the main branch here. This pdf version provides a clearer view for the plot. 
+The same information can be found in [Capstone_Visual_Final_Project_IDS707.pdf](Capstone_Visual_Final_Project_IDS707.pdf) on the main branch here. This pdf version provides a clearer view for the plot. 
 
 `Contextual Explanation: `
 
