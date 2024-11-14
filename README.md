@@ -4,15 +4,17 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 
 #### Final Project for IDS 707 Data Visualization Course
 
+The same information can be found in Capstone_Visual_Final_Project_IDS707.pdf on the main branch here. This pdf version provides a clearer view for the plot. 
+
 `Contextual Explanation: `
 
 This prediction project is done in collaboration with our client Social Insider. Social Insider provides business insights to marketing teams in large corporations by offering data analysis and comparison across business social media accounts. They have provided a 14-days free trial for trials before official subscription to their service. Currently, they would like to predict what conditions lead to the conversion of their free users in purchasing subscriptions. Our classification machine learning model targets at correctly predicting these converted subscribe users. 
 
 It was a common agreement reached during our discussion with client Social Insider that Recall is the performance matrix we should optimize for. The core of the reason lies in the formula difference between recall and precision: 
 
-\textit{Recall = TP / (TP+FN)}, and 
+Recall = TP / (TP+FN), and 
 
-\textit{Precision = TP = (TP+FP),} 
+Precision = TP = (TP+FP),
 
 Where: 
 
