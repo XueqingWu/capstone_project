@@ -4,7 +4,7 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 
 #### Final Project for IDS 707 Data Visualization Course
 
-**Contextual Explanation: **
+`Contextual Explanation: `
 
 This prediction project is done in collaboration with our client Social Insider. Social Insider provides business insights to marketing teams in large corporations by offering data analysis and comparison across business social media accounts. They have provided a 14-days free trial for trials before official subscription to their service. Currently, they would like to predict what conditions lead to the conversion of their free users in purchasing subscriptions. Our classification machine learning model targets at correctly predicting these converted subscribe users. 
 
@@ -17,7 +17,7 @@ FP = False Positive (Users who would NOT have subscribed and has incorrectly bee
 
 Optimizing recall tries minimizes False Negative (FN) which has a larger cost than False Positive (FP) in our scenario. Our current conversion rate is less than 1%. The cost of losing a user who would have subscribed (due to wrong prediction) is larger than the cost of extra marketing to users who would not have subscribed (no matter how much marketing they receive). Hence, we primarily use recall as the indicator matrix for choosing our best prediction model. 
 
-**Visualization: **
+`Visualization: `
 
 <img width="571" alt="Capstone_Visual_Final" src="https://github.com/user-attachments/assets/4b5c8d58-6fb2-47d4-a28b-461d90aff62b">
 
