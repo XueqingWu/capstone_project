@@ -3,12 +3,13 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler
 import numpy as np
+import os
 
 # Streamlit app title
 st.set_page_config(page_title='Customer Conversion Prediction Tool', layout='wide', initial_sidebar_state='expanded')
 
 # Load and display the logo and title
-st.image("socialinsider_logo.png", width=80)
+st.image("App/socialinsider_logo.png", width=80)
 st.markdown(
     """
     <h1 style="color: white; font-size: 36px; margin-left: 20px;">Customer Conversion Prediction Tool</h1>
@@ -159,7 +160,7 @@ if uploaded_file is not None:
         X_categorical = X_test[categorical_columns]
         X_continuous = X_test.drop(columns=categorical_columns)
 
-        with open("scaler.pkl", "rb") as file:
+        with open("App/scaler.pkl", "rb") as file:
             scaler = pickle.load(file)
 
         X_continuous_scaled = pd.DataFrame(scaler.transform(X_continuous))
@@ -169,7 +170,7 @@ if uploaded_file is not None:
 
         X_test_scaled.columns = X_test_scaled.columns.astype(str)
 
-        with open("best_model.pkl", "rb") as file:
+        with open("App/best_model.pkl", "rb") as file:
             model = pickle.load(file)
 
         y_pred = model.predict(X_test_scaled)
@@ -186,6 +187,9 @@ if uploaded_file is not None:
         columns.insert(2, "p_converted")
         columns.insert(3, "p_cvr")
         user_data = user_data[columns]
+
+        # Sort by p_cvr in descending order
+        user_data = user_data.sort_values(by="p_cvr", ascending=False)
 
         # Display the transformed data and download link
         st.success("✅ Data Transformation and Prediction Completed")
@@ -205,10 +209,10 @@ if uploaded_file is not None:
 
 if 'csv' in locals() or 'csv' in globals():
     st.markdown("""
-### Sort data by clicking on the column headers.
-### Key Variables Explained:
-- **User ID**: Identifier for each unique user.
-- **Converted**: Indicates real-life conversion (1 for success, 0 otherwise).
-- **Predicted Conversion**: Model-predicted conversion status (1 for predicted success, 0 otherwise).
-- **Conversion Probability**: Conversion likelihood as predicted by the model.
+### ⬇️ Data sorted by **p_cvr** in descending order by default. Sort data by clicking on the column headers.
+### 🔢 Key Variables Explained:
+- **user_id**: Identifier for each unique user.
+- **successful**: Indicates real-life conversion (1 for success, 0 otherwise).
+- **p_converted**: Model-predicted conversion status (1 for predicted success, 0 otherwise).
+- **p_cvr**: Conversion likelihood as predicted by the model.
 """)
