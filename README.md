@@ -65,19 +65,22 @@ The best-performing non-regression model in the benchmark study is an XGBoost cl
 
 ## 4.Results
 
-**To be completed by Kelly**
-
 ### 4.1 Interpretation of Results
 
-**To be completed by Kelly**
+With primarily optimization for recall while keeping a reasonable balance between tradeoff of precision for recall, Gradient Boosting model is considered as the best performing model among the list of models we experimented. This Gradient Boosting model trained with the transformed resampled data, has reached a recall of 0.8696 and a precision of 0.125. The recall indicates that the model accurately identifies 86.96% of all the users who would have converted and ensures an optimal capture of potential convertors. The precision of 0.125 indicates that 12.5% of predicted positives convert, with the remaining 87.5% identified as prospects—users who show traits of converters but haven’t converted yet. By directing more focused marketing toward these prospects, we anticipate increasing conversions. 
+
+With comparison to the industry benchmark we have researched on, this result is very close to the goal. The industry benchmark has a recall of 0.909 and a precisio of 0.360. However, their data shows an original conversion rate of 3%, which is more than three times our conversion rate. With an even more umbalance dataset compared to the benchmark study, we consider our recall of 0.8696 and precision of 0.125 as huge improvement on the model prediction performance already. 
 
 #### 4.1.1 Data Visualization(For IDS 707 Final)
 
-**To be completed by Kelly**
+<img width="567" alt="Screen Shot 2024-11-16 at 2 31 15 AM" src="https://github.com/user-attachments/assets/0880a174-c4d6-47fc-a5b8-851bc5d5b476">
+
 
 ### 4.2 Explanation of Results Tying to Goal
 
-**To be completed by Kelly**
+As demonstrated by the visualization and previous context, our model is selected mainly based on recall optimization. Optimizing for recall ensures least probability in losing our potential user who would have converted. While optimizing for precision would make the model overly conservative, predicting most cases as negative due to the data’s imbalance. In the case of optimizing for precision, only 2 to 5 cases will be predicted as positive and actually converted in real life. This would be less effective for a marketing-focused model like ours. 
+
+(More explanation on the difference between precision and recall is explained in conextual section of "Final Project for IDS 707 Data Visualization Course."
 
 ## 5. Technical Documentation
 
