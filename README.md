@@ -16,7 +16,9 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
    
 ## Customer Conversion Prediction Tool (Web App)
 ### Introduction
-The **Customer Conversion Prediction Tool** is a Streamlit web application designed to help you predict customer conversions based on uploaded event data. By leveraging a machine learning model, the app analyzes user behavior, computes conversion probabilities, and displays results in an easy-to-understand format. Users can sort and explore the results directly in the app and download the predictions as a CSV file for further analysis.
+The **Customer Conversion Prediction Tool** is a Streamlit web application designed to help you predict customer conversions based on uploaded event data.
+
+ By leveraging a machine learning model, the app analyzes user behavior, computes conversion probabilities, and displays results in an easy-to-understand format. Users can sort and explore the results directly in the app and download the predictions as a CSV file for further analysis.
 
 
 
