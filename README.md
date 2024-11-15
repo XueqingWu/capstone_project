@@ -1,14 +1,8 @@
 # Social Insider Prediction Problem
 
-Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (Haochong) Xia, Jaxon Yue
-
-## Index of Markdown
-
-# Social Insider Prediction Problem
-
 **Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (Haochong) Xia, Jaxon Yue**
 
-**Final Project for IDS 707 Data Visualization Course**
+**(Include Final Project for IDS 707 Data Visualization Course)**
 
 ## Index
 
@@ -130,26 +124,15 @@ The `App` folder contains the following components:
    [http://sipredict.streamlit.app](http://sipredict.streamlit.app)
 
 2. **Upload the event data:**
-    - Click the **Browse files** button to upload your event data in CSV format.
+    - Click the `Browse files` button to upload your event data in CSV format.
     - The app expects the data to have the same format as the raw event data, which can be found in the `Data` folder.
 
 3. **View/Download the prediction results:**
     - The app will preprocess the data, applies necessary transformations, and computes predictions using the best model.
     - The results will be displayed in a sortable and interactive table.
-    - You can also download the results as a CSV file by clicking the **Download Results CSV** button.
-
-
-
-1. [Final Project for IDS 707 Data Visualization Course](#Final-Project-for-IDS-707-Data-Visualization-Course)
-    - [Contextual Explanation](#Contextual-Explanation)
-    - [Visualization](#visualization)
-2. [Description](#description)
-3. [Using Guide](#using-guide)
-4. [Overall Timeline](#overall-timeline)
-5. [Important Files Included](#important-files-included)
-6. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform) 
-7. [Exploratory Analysis Summary](#exploratory-analysis-summary)
-
+    - You can also download the results as a CSV file by clicking the `Download Results CSV` button.
+  
+------------------------------------------------------------------------------------------------------------------------
 
 #### Final Project for IDS 707 Data Visualization Course
 
