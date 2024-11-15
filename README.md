@@ -4,6 +4,132 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 
 ## Index of Markdown
 
+# Social Insider Prediction Problem
+
+**Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (Haochong) Xia, Jaxon Yue**
+
+**Final Project for IDS 707 Data Visualization Course**
+
+## Index
+
+1. [Problem Statement](#problem-statement)
+    - [Goal](#goal)
+2. [Benchmark Study](#benchmark-study)
+    - [Conversion Problem](#conversion-problem)
+    - [Imbalance](#imbalance)
+    - [Background on Methods and Literature Review](#background-on-methods-and-literature-review)
+3. [Data and Methods (Modeling)](#data-and-methods-modeling)
+    - [Technical Details of Data Set](#technical-details-of-data-set)
+    - [Methods and Model Links](#methods-and-model-links)
+4. [Results](#results)
+    - [Interpretation of Results](#interpretation-of-results)
+        - [Data Visualization(For IDS 707 Final)](#data-visualization-(for-ids-707-final))
+    - [Explanation of Results Tying to Goal](#explanation-of-results-tying-to-goal)
+5. [Technical Documentation](#technical-documentation)
+    - [Files Included](#files-included)
+        - [Repo Files](#repo-files)
+            - [Pipeline Files](#pipeline-files)
+                - [What is Included](#what-is-included)
+                - [How to Use](#how-to-use)
+            - [App](#app)
+                - [Functionality](#functionality)
+                - [App Folder Contents](#app-folder-contents)
+                - [How to Use the App](#how-to-use-the-app)
+
+## Problem Statement
+
+**To be completed by Annie**
+
+### Goal
+
+**To be completed by Annie**
+
+## Benchmark Study
+
+**To be completed by Jaxon**
+
+### Conversion Problem
+
+**To be completed by Jaxon**
+
+### Imbalance
+
+**To be completed by Jaxon**
+
+### Background on Methods and Literature Review
+
+**To be completed by Jaxon**
+
+## Data and Methods (Modeling)
+
+**To be completed by Annie**
+
+### Technical Details of Data Set
+
+**To be completed by Annie**
+
+### Methods and Model Links
+
+**To be completed by Annie**
+
+## Results
+
+**To be completed by Kelly**
+
+### Interpretation of Results
+
+**To be completed by Kelly**
+
+#### Data Visualization(For IDS 707 Final)
+
+**To be completed by Kelly**
+
+### Explanation of Results Tying to Goal
+
+**To be completed by Kelly**
+
+## Technical Documentation
+
+### Files Included
+
+#### Repo Files
+
+This repo contains all the necessary files and code to replicate our project. The main folders are `Data_Pipeline`, `EDA_Files`, and `App`. Each folder contains the necessary files to run the pipeline, exploratory data analysis, and the web application. 
+
+##### Pipeline Files
+
+The pipeline files are located in the `Data_Pipeline` folder. They include all the processes required to transform the original event-level data to user-level data. This step is essential for data preprocessing before modeling.
+
+###### What is Included
+
+- **Social_Insider_Data_Pipeline.ipynb**: This Jupyter notebook contains all the necessary transformations for the original event-level data to user-level data. It involves data cleaning, feature engineering, and aggregation steps to prepare the data for the modeling phase.
+- **requirements.txt**: Lists all the dependencies required to run the pipeline code smoothly.
+
+###### How to Use
+
+1. Clone the repository from GitHub to your local machine.
+2. Install the required packages by running `pip install -r requirements.txt` in your terminal.
+3. Open the `Social_Insider_Data_Pipeline.ipynb` Jupyter notebook and run the cells step by step to transform the original data into user-level features.
+4. Make sure all the paths specified in the notebook align with your local file structure.
+
+##### App
+
+**To be completed by Jaxon**
+
+###### Functionality
+
+**To be completed by Jaxon**
+
+###### App Folder Contents
+
+**To be completed by Jaxon**
+
+###### How to Use the App
+
+**To be completed by Jaxon**
+
+
+
 1. [Final Project for IDS 707 Data Visualization Course](#Final-Project-for-IDS-707-Data-Visualization-Course)
     - [Contextual Explanation](#Contextual-Explanation)
     - [Visualization](#visualization)
