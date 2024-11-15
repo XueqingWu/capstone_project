@@ -34,10 +34,6 @@
 
 *Socialinsider* is a social media analytics company that provides data and services for users, like influencers and marketers, to compare performance across channels, get competitor analysis, benchmarks and listening insights. Users have a 14 days free-trial and then can decide to subscribe to the service. *Socialinsider* is trying to gain more subscribed users in order to improve their revenue. The goal of the project is to discover patterns in user activities within *Socialinsider* website and to predict the likelihood of users subscribing the service. 
 
-### 1.1 Goal
-
-**To be completed by Annie**
-
 ## 2. Benchmark Study
 
 ### 2.1 Motivation
@@ -53,15 +49,33 @@ The best-performing non-regression model in the benchmark study is an XGBoost cl
 
 ## 3. Data and Methods (Modeling)
 
-**To be completed by Annie**
+### 3.1 Data Overview
+- The data we are using is user activities data from website event log including users’ impression, click, add to cart, and purchase. Each row represents an event.
+- Event data:
 
-### 3.1 Technical Details of Data Set
 
-**To be completed by Annie**
 
-### 3.2 Methods and Model Links
+### 3.2 Data Transformation
+- Event Data to User Data:
+  
+- Since we want to predict the probability for each user becoming subscribed user, we need to transform into user-based data and aggregate the features according to each User ID, so that each row represents a user.
 
-**To be completed by Annie**
+| Original Data: Event-based     | Transformed Data: User-based              |
+|--------------------------------|-------------------------------------------|
+| Conversion                     | Conversion                                |
+| Load Time                      | Average Load Time & Max Load Time         |
+| Country                        | The first country appeared in the event data (Select the top 7 countries with the highest conversion rate) |
+| Event Name                     | Count of different events for each user (Events can potentially distinguish whether users can convert) |
+| + bench load success           |                                          |
+| + profile search success       |                                          |
+| + add profile success          |                                          |
+| + pricing modal visited        |                                          |
+| + profile load fail            |                                          |
+| + email receipt                |                                          |
+| Platform                       | Count for each type of platform          |
+| View                           | Count for each type of view              |
+
+- Transformed Event Data:
 
 ## 4.Results
 
