@@ -6,7 +6,7 @@
 
 ## Index
 
-1. [Problem Statement](#1.problem-statement)
+1. [Problem Statement](#1-problem-statement)
 2. [Benchmark Study](#benchmark-study)
     - [Motivation](#motivation)
     - [Benchmark Performance](#benchmark-performance)
@@ -30,7 +30,7 @@
                 - [App Folder Contents](#app-folder-contents)
                 - [How to Use the App](#how-to-use-the-app)
 
-## 1.Problem Statement
+## 1. Problem Statement
 
 *Socialinsider* is a social media analytics company that provides data and services for users, like influencers and marketers, to compare performance across channels, get competitor analysis, benchmarks and listening insights. Users have a 14 days free-trial and then can decide to subscribe to the service. *Socialinsider* is trying to gain more subscribed users in order to improve their revenue. The goal of the project is to discover patterns in user activities within *Socialinsider* website and to predict the likelihood of users subscribing the service. 
 
