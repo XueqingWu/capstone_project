@@ -4,7 +4,7 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 
 ## Index of Markdown
 
-1. [Contextual Explanation](#contextual-explanation)
+1. [Final Project for IDS 707 Data Visualization Course](#Final-Project-for-IDS-707-Data-Visualization-Course)
 2. [Visualization](#visualization)
 3. [Description](#description)
 4. [Using Guide](#using-guide)
