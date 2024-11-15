@@ -10,7 +10,7 @@
 2. [Benchmark Study](#2-benchmark-study)
    - [Motivation](#21-motivation)
    - [Benchmark Performance](#22-benchmark-performance)
-3. [Data and Methods (Modeling)](#3-data-and-methods-(modeling))
+3. [Data and Methods (Modeling)](#3-data-and-methods-(-modeling-))
     - [Data Overview](#31-data-overview)
     - [Data Transformation](#32-data-transformation)
     - [Resampling](#33-Resampling)
