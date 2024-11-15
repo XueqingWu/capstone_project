@@ -36,97 +36,107 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
                 - [App Folder Contents](#app-folder-contents)
                 - [How to Use the App](#how-to-use-the-app)
 
-## Problem Statement
+## 1. Problem Statement
+
+*Socialinsider* is a social media analytics company that provides data and services for users, like influencers and marketers, to compare performance across channels, get competitor analysis, benchmarks and listening insights. Users have a 14 days free-trial and then can decide to subscribe to the service. *Socialinsider* is trying to gain more subscribed users in order to improve their revenue. The goal of the project is to discover patterns in user activities within *Socialinsider* website and to predict the likelihood of users subscribing the service. 
+
+### 1.1 Goal
 
 **To be completed by Annie**
 
-### Goal
+## 2. Benchmark Study
+
+### 2.1 Motivation
+To compare our approach and results with industry-standard practices, we have discovered a benchmark study conducted by a researcher at Northwestern University. The original paper can be found [here](https://sites.northwestern.edu/aprilzhizhou/improving-e-commerce-conversion-rates-with-machine-learning/).
+
+We picked this study because:
+* **The study has a similar research problem:** predicting conversion rate from user event data from an e-commerce site.
+* **The study uses similar data:** user event data on the e-commerce site from users around the world.
+* **The study has an unbalanced dataset:** the overall conversion rate is around 3%. The study uses SMOTE (an oversampling method) to balance the dataset.
+
+### 2.2 Benchmark Performance
+The best-performing non-regression model in the benchmark study is an XGBoost classifier, which achieves a precision of 0.360 and a recall of 0.909. These metrics were used as a benchmark to compare our model's performance. Achieving similar results would indicate that our model is competitive with industry-standard practices.
+
+## 3. Data and Methods (Modeling)
 
 **To be completed by Annie**
 
-## Benchmark Study
-
-**To be completed by Jaxon**
-
-### Conversion Problem
-
-**To be completed by Jaxon**
-
-### Imbalance
-
-**To be completed by Jaxon**
-
-### Background on Methods and Literature Review
-
-**To be completed by Jaxon**
-
-## Data and Methods (Modeling)
+### 3.1 Technical Details of Data Set
 
 **To be completed by Annie**
 
-### Technical Details of Data Set
+### 3.2 Methods and Model Links
 
 **To be completed by Annie**
 
-### Methods and Model Links
-
-**To be completed by Annie**
-
-## Results
+## 4.Results
 
 **To be completed by Kelly**
 
-### Interpretation of Results
+### 4.1 Interpretation of Results
 
 **To be completed by Kelly**
 
-#### Data Visualization(For IDS 707 Final)
+#### 4.1.1 Data Visualization(For IDS 707 Final)
 
 **To be completed by Kelly**
 
-### Explanation of Results Tying to Goal
+### 4.2 Explanation of Results Tying to Goal
 
 **To be completed by Kelly**
 
-## Technical Documentation
+## 5. Technical Documentation
 
-### Files Included
-
-#### Repo Files
+### 5.1 Repo Files
 
 This repo contains all the necessary files and code to replicate our project. The main folders are `Data_Pipeline`, `EDA_Files`, and `App`. Each folder contains the necessary files to run the pipeline, exploratory data analysis, and the web application. 
+- **requirements.txt**: Lists all the dependencies required to run the pipeline code smoothly.
 
-##### Pipeline Files
+#### 5.1.1 Pipeline Files
 
 The pipeline files are located in the `Data_Pipeline` folder. They include all the processes required to transform the original event-level data to user-level data. This step is essential for data preprocessing before modeling.
 
-###### What is Included
+##### What is Included
 
 - **Social_Insider_Data_Pipeline.ipynb**: This Jupyter notebook contains all the necessary transformations for the original event-level data to user-level data. It involves data cleaning, feature engineering, and aggregation steps to prepare the data for the modeling phase.
-- **requirements.txt**: Lists all the dependencies required to run the pipeline code smoothly.
 
-###### How to Use
+
+##### How to Use
 
 1. Clone the repository from GitHub to your local machine.
 2. Install the required packages by running `pip install -r requirements.txt` in your terminal.
 3. Open the `Social_Insider_Data_Pipeline.ipynb` Jupyter notebook and run the cells step by step to transform the original data into user-level features.
 4. Make sure all the paths specified in the notebook align with your local file structure.
 
-##### App
+##### 5.1.2 App
 
-**To be completed by Jaxon**
+###### Introduction
+The **Customer Conversion Prediction Tool** is a Streamlit web application that automates our pipeline for predicting user conversion rates. The app takes in raw event data, preprocesses it,  uses our best-performing model (Gradient Boosting Classifier) to predict the conversion rate of each user, and outputs the results in a downloadable CSV file.
 
-###### Functionality
+###### Components of the App Folder
+The `App` folder contains the following components:
 
-**To be completed by Jaxon**
+| File Name           | Description                                         |
+|---------------------|-----------------------------------------------------|
+| `best_model.pkl`    | The best-performing model we trained (Gradient Boosting). |
+| `cvr_prediction_app.py` | The main Streamlit application script.          |
+| `requirements.txt`  | A list of dependencies required to run the app. This includes libraries such as Streamlit, pandas, and scikit-learn. |
+| `scaler.pkl`        | A saved `StandardScaler` object used to scale the data during model training and inference. This ensures the uploaded data is scaled correctly before making predictions. |
+| `socialinsider_logo.png` | The logo displayed in the app interface.         |
 
-###### App Folder Contents
+###### Using the App
 
-**To be completed by Jaxon**
+1. **Go to the App website:**  
+   [http://sipredict.streamlit.app](http://sipredict.streamlit.app)
 
-###### How to Use the App
+2. **Upload the event data:**
+    - Click the **Browse files** button to upload your event data in CSV format.
+    - The app expects the data to have the same format as the raw event data, which can be found in the `Data` folder.
 
-**To be completed by Jaxon**
+3. **View/Download the prediction results:**
+    - The app will preprocess the data, applies necessary transformations, and computes predictions using the best model.
+    - The results will be displayed in a sortable and interactive table.
+    - You can also download the results as a CSV file by clicking the **Download Results CSV** button.
 
 
 
