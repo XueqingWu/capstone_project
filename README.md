@@ -18,7 +18,8 @@
     - [Model](#34-model)
 4. [Results](#4-results)
     - [Interpretation of Results](#41-interpretation-of-results)
-    - [Explanation of Results Tying to Goal](#42-explanation-of-results-tying-to-goal)
+    - [Data Visualization (For IDS 707 Final)](#42-data-visualization-for-ids-707-final)
+    - [Explanation of Results Tying to Goal](#43-explanation-of-results-tying-to-goal)
 5. [Technical Documentation](#5-technical-documentation)
     - [Files Included](#51-files-included)
     - [How to Replicate Our Whole Process](#52-How-to-Replicate-Our-Whole-Process)
@@ -103,12 +104,12 @@ With primarily optimization for recall while keeping a reasonable balance betwee
 
 With comparison to the industry benchmark we have researched on, this result is very close to the goal. The industry benchmark has a recall of 0.909 and a precisio of 0.360. However, their data shows an original conversion rate of 3%, which is more than three times our conversion rate. With an even more umbalance dataset compared to the benchmark study, we consider our recall of 0.8696 and precision of 0.125 as huge improvement on the model prediction performance already. 
 
-#### 4.1.1 Data Visualization(For IDS 707 Final)
+#### 4.2 Data Visualization(For IDS 707 Final)
 
 <img width="567" alt="Screen Shot 2024-11-16 at 2 31 15 AM" src="https://github.com/user-attachments/assets/0880a174-c4d6-47fc-a5b8-851bc5d5b476">
 
 
-### 4.2 Explanation of Results Tying to Goal
+### 4.3 Explanation of Results Tying to Goal
 
 As demonstrated by the visualization and previous context, our model is selected mainly based on recall optimization. Optimizing for recall ensures least probability in losing our potential user who would have converted. While optimizing for precision would make the model overly conservative, predicting most cases as negative due to the data’s imbalance. In the case of optimizing for precision, only 2 to 5 cases will be predicted as positive and actually converted in real life. This would be less effective for a marketing-focused model like ours. 
 
