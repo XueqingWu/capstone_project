@@ -8,12 +8,13 @@
 
 1. [Problem Statement](#1.problem-statement)
 2. [Benchmark Study](#benchmark-study)
-    - [Conversion Problem](#conversion-problem)
-    - [Imbalance](#imbalance)
-    - [Background on Methods and Literature Review](#background-on-methods-and-literature-review)
-3. [Data and Methods (Modeling)](#data-and-methods-modeling)
-    - [Technical Details of Data Set](#technical-details-of-data-set)
-    - [Methods and Model Links](#methods-and-model-links)
+    - [Motivation](#motivation)
+    - [Benchmark Performance](#benchmark-performance)
+3. [Data and Methods (Modeling)](#data-and-methods-(modeling))
+    - [Data Overview](#data-overview)
+    - [Data Transformation](#data-transformation)
+    - [Resampling](#Resampling)
+    - [Model](#model)
 4. [Results](#results)
     - [Interpretation of Results](#interpretation-of-results)
         - [Data Visualization(For IDS 707 Final)](#data-visualization-(for-ids-707-final))
@@ -71,7 +72,7 @@ The best-performing non-regression model in the benchmark study is an XGBoost cl
         2.	Maintain the buy user as the minority, even though making buy users as majority can have better recall
 
 
-### 3.4 Model:
+### 3.4 Model
 
 - We have tried different types of models:
 
