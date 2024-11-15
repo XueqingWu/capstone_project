@@ -2,6 +2,23 @@
 
 Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (Haochong) Xia, Jaxon Yue
 
+## Index of Markdown
+
+1. [Contextual Explanation](#contextual-explanation)
+2. [Visualization](#visualization)
+3. [Description](#description)
+4. [Using Guide](#using-guide)
+5. [Overall Timeline](#overall-timeline)
+6. [Important Files Included](#important-files-included)
+    - [Data Folder](#data-folder)
+    - [Data Pipeline Folder](#data-pipeline-folder)
+    - [EDA Files Folder](#eda-files-folder)
+7. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform)
+8. [Exploratory Analysis Summary](#exploratory-analysis-summary)
+    - [Data Overview](#data-overview)
+    - [Example Visualizations](#example-visualizations)
+    - [Pipeline Transformation](#pipeline-transformation)
+
 #### Final Project for IDS 707 Data Visualization Course
 
 The same information can be found in [Capstone_Visual_Final_Project_IDS707.pdf](Capstone_Visual_Final_Project_IDS707.pdf) on the main branch here. This pdf version provides a clearer view for the plot. 
