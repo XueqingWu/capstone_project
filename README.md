@@ -84,25 +84,39 @@ As demonstrated by the visualization and previous context, our model is selected
 
 ## 5. Technical Documentation
 
-### 5.1 Repo Files
+### 5.1 Files Included
 
-This repo contains all the necessary files and code to replicate our project. The main folders are `Data_Pipeline`, `EDA_Files`, and `App`. Each folder contains the necessary files to run the pipeline, exploratory data analysis, and the web application. 
-- **requirements.txt**: Lists all the dependencies required to run the pipeline code smoothly.
+The repository for our capstone project can be found [here](https://github.com/XueqingWu/capstone_project). It contains all the necessary files and code to replicate the project. The main folders are `App`, `Data_Pipeline`, `EDA`, `Final_Data`, `Modeling`, and `Raw_Data`. Below is a brief description of each folder:
 
-#### 5.1.1 Pipeline Files
+- **App**: Contains files for the deployment of the web application for predicting subscription conversion. Key files include:
+  - `best_model.pkl`: The saved model used for making predictions.
+  - `cvr_prediction_app.py`: The main script for running the web application.
+  - `scaler.pkl`: The scaler used for feature normalization.
+  - `requirements.txt`: Lists all the dependencies required to run the application smoothly.
+  - `socialinsider_logo.png`: Logo used in the web application interface.
 
-The pipeline files are located in the `Data_Pipeline` folder. They include all the processes required to transform the original event-level data to user-level data. This step is essential for data preprocessing before modeling.
+- **Data_Pipeline**: Contains the data transformation pipeline.
+  - `Transform_Resample_Data.ipynb`: A Jupyter notebook that involves all processes required to transform and resample the original event-level data to user-level data.
 
-##### What is Included
+- **EDA**: Contains files related to exploratory data analysis.
+  - `Social_Insider_EDA_DataViz.ipynb`: Jupyter notebook that includes the code for generating exploratory data analysis visualizations.
+  - `Socialinsider Exploratory Data Analysis.pdf`: Report detailing the findings of the exploratory data analysis.
 
-- **Social_Insider_Data_Pipeline.ipynb**: This Jupyter notebook contains all the necessary transformations for the original event-level data to user-level data. It involves data cleaning, feature engineering, and aggregation steps to prepare the data for the modeling phase.
+- **Final_Data**: Contains the transformed and resampled data ready for modeling.
+  - `X_test.csv`, `X_train_resampled_optrecall.csv`, `y_test.csv`, `y_train_resampled_optrecall.csv`: Training and testing data files used in the modeling phase.
 
+- **Modeling**: Contains the modeling notebook.
+  - `Model.ipynb`: Jupyter notebook that contains the model training process and evaluation.
 
-##### How to Use
+- **Raw_Data**: Contains the raw data provided by Social Insider.
+  - Monthly CSV files such as `socialinsider_events_2024-05.csv`, `socialinsider_events_2024-06.csv`, etc.
+  - `Capstone_Visual_Final_Project_IDS_707.pdf`: Final report of the capstone project.
+
+### 5.2 How to Use
 
 1. Clone the repository from GitHub to your local machine.
 2. Install the required packages by running `pip install -r requirements.txt` in your terminal.
-3. Open the `Social_Insider_Data_Pipeline.ipynb` Jupyter notebook and run the cells step by step to transform the original data into user-level features.
+3. Open the `Transform_Resample_Data.ipynb` Jupyter notebook and run the cells step by step to transform the original data into user-level features.
 4. Make sure all the paths specified in the notebook align with your local file structure.
 
 ## 6. Web App
