@@ -108,12 +108,12 @@ The pipeline files are located in the `Data_Pipeline` folder. They include all t
 3. Open the `Social_Insider_Data_Pipeline.ipynb` Jupyter notebook and run the cells step by step to transform the original data into user-level features.
 4. Make sure all the paths specified in the notebook align with your local file structure.
 
-##### 5.1.2 App
+## 6. Web App
 
-###### Introduction
+### 6.1 App Introduction
 The **Customer Conversion Prediction Tool** is a Streamlit web application that automates our pipeline for predicting user conversion rates. The app takes in raw event data, preprocesses it,  uses our best-performing model (Gradient Boosting Classifier) to predict the conversion rate of each user, and outputs the results in a downloadable CSV file.
 
-###### Components of the App Folder
+### 6.2 Components of the App Folder
 The `App` folder contains the following components:
 
 | File Name           | Description                                         |
@@ -124,7 +124,7 @@ The `App` folder contains the following components:
 | `scaler.pkl`        | A saved `StandardScaler` object used to scale the data during model training and inference. This ensures the uploaded data is scaled correctly before making predictions. |
 | `socialinsider_logo.png` | The logo displayed in the app interface.         |
 
-###### Using the App
+### 6.3 Using the App
 
 1. **Go to the App website:**  
    [http://sipredict.streamlit.app](http://sipredict.streamlit.app)
@@ -149,14 +149,6 @@ The `App` folder contains the following components:
 5. [Important Files Included](#important-files-included)
 6. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform) 
 7. [Exploratory Analysis Summary](#exploratory-analysis-summary)
-   
-## Customer Conversion Prediction Tool (Web App)
-### Introduction
-The **Customer Conversion Prediction Tool** is a Streamlit web application designed to help you predict customer conversions based on uploaded event data.
-
- By leveraging a machine learning model, the app analyzes user behavior, computes conversion probabilities, and displays results in an easy-to-understand format. Users can sort and explore the results directly in the app and download the predictions as a CSV file for further analysis.
-
-
 
 
 #### Final Project for IDS 707 Data Visualization Course
