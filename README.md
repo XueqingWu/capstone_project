@@ -5,16 +5,17 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 ## Index of Markdown
 
 1. [Final Project for IDS 707 Data Visualization Course](#Final-Project-for-IDS-707-Data-Visualization-Course)
-2. [Visualization](#visualization)
-3. [Description](#description)
-4. [Using Guide](#using-guide)
-5. [Overall Timeline](#overall-timeline)
-6. [Important Files Included](#important-files-included)
+    - [Contextual Explanation](#Contextual-Explanation)
+    - [Visualization](#visualization)
+2. [Description](#description)
+3. [Using Guide](#using-guide)
+4. [Overall Timeline](#overall-timeline)
+5. [Important Files Included](#important-files-included)
     - [Data Folder](#data-folder)
     - [Data Pipeline Folder](#data-pipeline-folder)
     - [EDA Files Folder](#eda-files-folder)
-7. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform)
-8. [Exploratory Analysis Summary](#exploratory-analysis-summary)
+6. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform)
+7. [Exploratory Analysis Summary](#exploratory-analysis-summary)
     - [Data Overview](#data-overview)
     - [Example Visualizations](#example-visualizations)
     - [Pipeline Transformation](#pipeline-transformation)
@@ -23,7 +24,7 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 
 The same information can be found in [Capstone_Visual_Final_Project_IDS707.pdf](Capstone_Visual_Final_Project_IDS707.pdf) on the main branch here. This pdf version provides a clearer view for the plot. 
 
-`Contextual Explanation: `
+###### Contextual Explanation: 
 
 This prediction project is done in collaboration with our client Social Insider. Social Insider provides business insights to marketing teams in large corporations by offering data analysis and comparison across business social media accounts. They have provided a 14-days free trial for trials before official subscription to their service. Currently, they would like to predict what conditions lead to the conversion of their free users in purchasing subscriptions. Our classification machine learning model targets at correctly predicting these converted subscribe users. 
 
@@ -43,7 +44,7 @@ FP = False Positive (Users who would NOT have subscribed and has incorrectly bee
 
 Optimizing recall tries minimizes False Negative (FN) which has a larger cost than False Positive (FP) in our scenario. Our current conversion rate is less than 1%. The cost of losing a user who would have subscribed (due to wrong prediction) is larger than the cost of extra marketing to users who would not have subscribed (no matter how much marketing they receive). Hence, we primarily use recall as the indicator matrix for choosing our best prediction model. 
 
-`Visualization: `
+###### Visualization:
 
 <img width="571" alt="Capstone_Visual_Final" src="https://github.com/user-attachments/assets/4b5c8d58-6fb2-47d4-a28b-461d90aff62b">
 
