@@ -6,7 +6,7 @@
 
 ## Index
 
-[1. Problem Statement](#problem-statement)
+1. [Problem Statement](#1.-problem-statement)
 2. [Benchmark Study](#benchmark-study)
     - [Conversion Problem](#conversion-problem)
     - [Imbalance](#imbalance)
