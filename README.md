@@ -6,7 +6,7 @@
 
 ## Index
 
-1. [Problem Statement](#problem-statement)
+[1. Problem Statement](#problem-statement)
 2. [Benchmark Study](#benchmark-study)
     - [Conversion Problem](#conversion-problem)
     - [Imbalance](#imbalance)
@@ -64,13 +64,13 @@ The best-performing non-regression model in the benchmark study is an XGBoost cl
 | Conversion                     | Conversion                                |
 | Load Time                      | Average Load Time & Max Load Time         |
 | Country                        | The first country appeared in the event data (Select the top 7 countries with the highest conversion rate) |
-| Event Name                     | Count of different events for each user (Events can potentially distinguish whether users can convert) 
-+ bench load success           
-+ profile search success       
-+ add profile success          
-+ pricing modal visited        
-+ profile load fail            
-+ email receipt  |              
+| Event Name                     | Count of different events for each user (Events can potentially distinguish whether users can convert) |
+|                                |+ bench load success        |   
+|                                |+ profile search success     |  
+|                                |+ add profile success         | 
+|                                |+ pricing modal visited        |
+|                                |+ profile load fail            |
+|                                |+ email receipt  |              
 | Platform                       | Count for each type of platform          |
 | View                           | Count for each type of view              |
 
