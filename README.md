@@ -130,7 +130,7 @@ The repository for our capstone project can be found [here](https://github.com/X
   - `socialinsider_logo.png`: Logo used in the web application interface.
 
 - **Data_Pipeline**: Contains the data transformation pipeline.
-  - `Transform_Resample_Data.ipynb`: A Jupyter notebook that involves all processes required to transform and resample the original event-level data to user-level data.
+  - `Transform_Resample_Data.ipynb`: A Jupyter notebook that involves all processes required to transform and resample the original event-level data to user-level data. It also includes the resampling process and outputs the final data for modeling.
 
 - **EDA**: Contains files related to exploratory data analysis.
   - `Social_Insider_EDA_DataViz.ipynb`: Jupyter notebook that includes the code for generating exploratory data analysis visualizations.
@@ -140,18 +140,18 @@ The repository for our capstone project can be found [here](https://github.com/X
   - `X_test.csv`, `X_train_resampled_optrecall.csv`, `y_test.csv`, `y_train_resampled_optrecall.csv`: Training and testing data files used in the modeling phase.
 
 - **Modeling**: Contains the modeling notebook.
-  - `Model.ipynb`: Jupyter notebook that contains the model training process and evaluation.
+  - `Model.ipynb`: Jupyter notebook that contains the model training process of all models we tried and evaluation. It also exports the best model and the predicted probabilities of users' conversion rate of the data we have in the end.
 
 - **Raw_Data**: Contains the raw data provided by Social Insider.
   - Monthly CSV files such as `socialinsider_events_2024-05.csv`, `socialinsider_events_2024-06.csv`, etc.
   - `Capstone_Visual_Final_Project_IDS_707.pdf`: Final report of the capstone project.
 
-### 5.2 How to Use
+### 5.2 How to Replicate Our Whole Process
 
 1. Clone the repository from GitHub to your local machine.
-2. Install the required packages by running `pip install -r requirements.txt` in your terminal.
-3. Open the `Transform_Resample_Data.ipynb` Jupyter notebook and run the cells step by step to transform the original data into user-level features.
-4. Make sure all the paths specified in the notebook align with your local file structure.
+2. Run the `Transform_Resample_Data.ipynb` to export the final data.
+3. Run the `Model.ipynb` to export the best model and the predicted probabilities of users' conversion rate of the data we have. 
+
 
 ## 6. Web App
 
@@ -182,103 +182,3 @@ The `App` folder contains the following components:
     - The app will preprocess the data, applies necessary transformations, and computes predictions using the best model.
     - The results will be displayed in a sortable and interactive table.
     - You can also download the results as a CSV file by clicking the `Download Results CSV` button.
-  
-------------------------------------------------------------------------------------------------------------------------
-
-#### Final Project for IDS 707 Data Visualization Course
-
-The same information can be found in [Capstone_Visual_Final_Project_IDS707.pdf](Capstone_Visual_Final_Project_IDS_707.pdf) on the main branch here. This pdf version provides a clearer view for the plot. 
-
-###### Contextual Explanation: 
-
-This prediction project is done in collaboration with our client Social Insider. Social Insider provides business insights to marketing teams in large corporations by offering data analysis and comparison across business social media accounts. They have provided a 14-days free trial for trials before official subscription to their service. Currently, they would like to predict whether their free users will purchase subscriptions base on their event logs. Our classification machine learning model targets at correctly predicting these converted subscribe users. 
-
-The current conversion rate (number of subscribed users over total users) is less than 1%, which leads to an extremely imbalance dataset. This has cause “accuracy” no longer a valid and appropriate matrix for measuring model performance. Hence, it was a common agreement reached during our discussion with client Social Insider that Recall is the performance matrix we should optimize for. The core of the reason lies in the formula difference between recall and precision: 
-
-Recall = TP / (TP+FN), and 
-
-Precision = TP = (TP+FP), 
-
-Where: 
-TP = True Positive (Users who would have subscribed and has correctly been predicted as positive subscribe user)
-FN = False Negative (Users who would have subscribed and has incorrectly been predicted as non-subscribe user)
-FP = False Positive (Users who would NOT have subscribed and has incorrectly been predicted as subscribe user)
-
-Optimizing recall tries minimizes False Negative (FN) which has a larger cost than False Positive (FP) in our scenario. Our current conversion rate is less than 1%. The cost of losing a user who would have subscribed (due to wrong prediction) is larger than the cost of extra marketing to users who would not have subscribed (no matter how much marketing they receive). Hence, we primarily use recall as the indicator matrix for choosing our best prediction model. 
-
-###### Visualization:
-
-<img width="567" alt="Screen Shot 2024-11-16 at 2 31 15 AM" src="https://github.com/user-attachments/assets/383edbc5-c046-429c-905d-ea165cc15593">
-
-
-#### Description
-This Github repository serves as the primarily record of our capstone team project. The project cooperates with the Social Insider company to accomplish 2 main goals: 1. developing an algorithm to predict user behavior (subscribe/purchase to Social Insider services) base on a series of events conducted by the user; 2. predicting the follower count and average engagement rate of social media pages based on historical performance data. 
-
-#### Using Guide
-
-`Step 1: ` Clone the entire Github repository to local. (Make sure everything is up to date with Git Pull) 
-
-`Step 2: ` Directly run the code from the jupyter notebooks. (everything, including path, is already set up and prepared for direct running) 
-
-`Step 3: ` Descriptions and commennts in the jupyter notebooks support better understanding of the process. 
-
-#### Overall Timeline
-
-![timeline](https://github.com/user-attachments/assets/13acd1ba-d3a2-4f16-82e2-ceb16a748575)
-
-#### Important Files Included: 
-- `Data Folder: `
-    - socialinsider_events_2024.csv data files which are labeled with the associated month. Ex. socialinsider_events_2024-05.csv is the event data in May 2024. 
-- `Data_Pipeline Folder: `
-    - Social_Insider_Data_Pipeline.ipynb: a jupyter notebook that involves all processes for transforming original event-level data to user-level data, which serves as the data preprocessing stage before modeling.
-- `EDA Files Folder: `
-    - Social_Insider_EDA_DataViz.ipynb: a jupyter notebook that includes all the processing code for generating the exploratory data analysis visualizations
-    - Socialinsider Exploratory Data Analysis.pdf: a report that includes main details of our exploratory analysis outcomes. The report explains data insights with visualizations as well as pipeline transformation process. 
- 
-#### Example User Journey on Social Insider Platform
-
-![whiteboard_exported_image](https://github.com/user-attachments/assets/1e245042-408c-42d0-8607-1b02f862e7bb)
- 
-#### Exploratory Analysis Summary
-
-`1. Data Overview: `
-
-<img width="759" alt="截屏2024-10-08 04 22 17" src="https://github.com/user-attachments/assets/aaaa0f6a-8624-4ce8-89f9-59d87a85de50">
-
-`2. Example Visualizations: `
-
-More visualizations and exploratory analysis details can be fold in "Social Insider Exploratory Data Analysis" file. 
-
-![visual1](https://github.com/user-attachments/assets/69135750-9b38-4841-940e-032b8df9da71)
-
-![visual2](https://github.com/user-attachments/assets/7fca8f0f-d0b8-45cb-9975-f378c0673d82)
-
-`3. Pipeline Transformation: `
-A simplified diagram for explaining the pipeline transformation:
-
-<img width="1161" alt="截屏2024-10-08 04 20 17" src="https://github.com/user-attachments/assets/a4c18974-8c1b-4da8-a0f5-a82b57340b1b">
-
-Based on our EDA insights, we have done data cleaning and feature engineering, in which we have built a pipeline for transforming the original event-level data to user-level data. In the original data, each row is representing each event done by the user and its associated information such as load time, platform etc. In the transformed data, each row is representing behaviors and features related to every unique user. There are in total 50 features that have been transformed by the pipeline currently. These mainly include conversion, country, country_xxx (whether the user belong to one of the top 5 buy sucess country), load time, count of specific events, count of each specific platform and count for each type of view.
-
-Transformed Features Include: 
-- Conversion
-- Country--select the first country shown at the event
-- Country_"countryname" -- whether the user belongs to one of the top 5 conversion rate countries
-- Aggregated Load Time
-  - Average Load time
-  - Maximum load time
-- Count of events for each user (events that can potentially distinguish whether users can convert)
-  - bench load success
-  - profile search success
-  - add profile success
-  - pricing modal visited
-  - profile load fail
-  - email receipt
-- Count of each platform--combined categories
-  - Examples: 
-  - Facebook & fb -----> fb -----> platform_fb_count
-  - Twitter & tw  -----> tw -----> platform_tw_count
-- Count for each type of view (19 categories)
-  - Examples: 
-  - Profile  ----->  view_profile
-  - Projecthome ----->  view_projecthome
