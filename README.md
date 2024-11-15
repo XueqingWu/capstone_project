@@ -104,7 +104,7 @@ With primarily optimization for recall while keeping a reasonable balance betwee
 
 With comparison to the industry benchmark we have researched on, this result is very close to the goal. The industry benchmark has a recall of 0.909 and a precisio of 0.360. However, their data shows an original conversion rate of 3%, which is more than three times our conversion rate. With an even more umbalance dataset compared to the benchmark study, we consider our recall of 0.8696 and precision of 0.125 as huge improvement on the model prediction performance already. 
 
-#### 4.2 Data Visualization(For IDS 707 Final)
+#### 4.2 Data Visualization (For IDS 707 Final)
 
 <img width="567" alt="Screen Shot 2024-11-16 at 2 31 15 AM" src="https://github.com/user-attachments/assets/0880a174-c4d6-47fc-a5b8-851bc5d5b476">
 
