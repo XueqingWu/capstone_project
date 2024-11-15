@@ -7,7 +7,6 @@
 ## Index
 
 1. [Problem Statement](#problem-statement)
-    - [Goal](#goal)
 2. [Benchmark Study](#benchmark-study)
     - [Conversion Problem](#conversion-problem)
     - [Imbalance](#imbalance)
@@ -53,7 +52,7 @@ The best-performing non-regression model in the benchmark study is an XGBoost cl
 - The data we are using is user activities data from website event log including users’ impression, click, add to cart, and purchase. Each row represents an event.
 - Event data:
 
-
+![alt text](Pictures/event_data.png)
 
 ### 3.2 Data Transformation
 - Event Data to User Data:
@@ -65,17 +64,51 @@ The best-performing non-regression model in the benchmark study is an XGBoost cl
 | Conversion                     | Conversion                                |
 | Load Time                      | Average Load Time & Max Load Time         |
 | Country                        | The first country appeared in the event data (Select the top 7 countries with the highest conversion rate) |
-| Event Name                     | Count of different events for each user (Events can potentially distinguish whether users can convert) |
-| + bench load success           |                                          |
-| + profile search success       |                                          |
-| + add profile success          |                                          |
-| + pricing modal visited        |                                          |
-| + profile load fail            |                                          |
-| + email receipt                |                                          |
+| Event Name                     | Count of different events for each user (Events can potentially distinguish whether users can convert) 
++ bench load success           
++ profile search success       
++ add profile success          
++ pricing modal visited        
++ profile load fail            
++ email receipt  |              
 | Platform                       | Count for each type of platform          |
 | View                           | Count for each type of view              |
 
 - Transformed Event Data:
+
+![alt text](Pictures/user_data.png)
+
+### 3.3 Resampling
+- The data is very imbalanced with conversion rate less than 1%. This will make the impede the modeling process, leading to biased model. Hence, we need to make our data more balanced. We have tried processing methods such as filtering with specific features, SMOTE and resampling. It turned out that resampling is the most effective one. After experimenting different resampling method, we decide to combine under sampling and oversampling method. We duplicate the samples from buy users, which serves as oversampling, and random samples from the not buy users, which serves as under sampling. We adjust the ratio between buy users and not buy users by optimizing the model recall. The final resample training data has 534 samples in buy user class and 1000 samples in not buy class. Some important rules we are following are:
+        1.	Only resample the training dataset
+        2.	Maintain the buy user as the minority, even though making buy users as majority can have better recall
+
+
+### 3.4 Model:
+
+- We have tried different types of models:
+
+  - Traditional Model:
+    -	Logistic Regression
+    -	k-Nearest Neighbor
+    -	Decision Tree
+  - Ensemble Method:
+    -	Random Forest
+    -	Gradient Boosting
+    -	XGBoost
+  - Neural Network:
+    - MLP Classifier
+
+For each model process, we follow the procedures below:
+
+- Feature Scaling—to ensure all features contribute equally to the model’s performance
+-	Grid Search—to systematically test combinations of hyperparameters to find the best configuration
+-	Cross Validation—to reduce overfitting and improve generalization
+-	Model Evaluation—to assess performance metrics including accuracy, precision, recall, F1, confusion matrix, and more
+
+
+Finally, Gradient Boosting performs the best among all models, and we select the gradient boosting model as our final model. 
+
 
 ## 4.Results
 
@@ -94,7 +127,7 @@ With comparison to the industry benchmark we have researched on, this result is 
 
 As demonstrated by the visualization and previous context, our model is selected mainly based on recall optimization. Optimizing for recall ensures least probability in losing our potential user who would have converted. While optimizing for precision would make the model overly conservative, predicting most cases as negative due to the data’s imbalance. In the case of optimizing for precision, only 2 to 5 cases will be predicted as positive and actually converted in real life. This would be less effective for a marketing-focused model like ours. 
 
-(More explanation on the difference between precision and recall is explained in conextual section of "Final Project for IDS 707 Data Visualization Course."
+(More explanation on the difference between precision and recall is explained in conextual section of "Final Project for IDS 707 Data Visualization Course.")
 
 ## 5. Technical Documentation
 
