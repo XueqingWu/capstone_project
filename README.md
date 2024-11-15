@@ -13,9 +13,7 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 5. [Important Files Included](#important-files-included)
 6. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform) 
 7. [Exploratory Analysis Summary](#exploratory-analysis-summary)
-    - [Data Overview](#data-overview)
-    - [Example Visualizations](#example-visualizations)
-    - [Pipeline Transformation](#pipeline-transformation)
+   
 
 #### Final Project for IDS 707 Data Visualization Course
 
