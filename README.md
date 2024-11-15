@@ -17,7 +17,7 @@
     - [Model](#34-model)
 4. [Results](#4-results)
     - [Interpretation of Results](#41-interpretation-of-results)
-        - [Data Visualization(For IDS 707 Final)](#4-1-1-data-visualization-for-ids-707-final)
+         - [Data Visualization (For IDS 707 Final)](#4-1-1-data-visualization-for-ids-707-final)
     - [Explanation of Results Tying to Goal](#42-explanation-of-results-tying-to-goal)
 5. [Technical Documentation](#5-technical-documentation)
     - [Files Included](#51-files-included)
