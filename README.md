@@ -11,7 +11,7 @@ Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (H
 3. [Using Guide](#using-guide)
 4. [Overall Timeline](#overall-timeline)
 5. [Important Files Included](#important-files-included)
-6. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform)
+6. [Example User Journey on Social Insider Platform](#example-user-journey-on-social-insider-platform) 
 7. [Exploratory Analysis Summary](#exploratory-analysis-summary)
     - [Data Overview](#data-overview)
     - [Example Visualizations](#example-visualizations)
@@ -70,7 +70,7 @@ This Github repository serves as the primarily record of our capstone team proje
     - Social_Insider_EDA_DataViz.ipynb: a jupyter notebook that includes all the processing code for generating the exploratory data analysis visualizations
     - Socialinsider Exploratory Data Analysis.pdf: a report that includes main details of our exploratory analysis outcomes. The report explains data insights with visualizations as well as pipeline transformation process. 
  
-#### Example User Journey on a Social Insider Platform
+#### Example User Journey on Social Insider Platform
 
 ![whiteboard_exported_image](https://github.com/user-attachments/assets/1e245042-408c-42d0-8607-1b02f862e7bb)
  
