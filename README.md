@@ -8,7 +8,7 @@
 
 1. [Problem Statement](#1-problem-statement)
 2. [Benchmark Study](#2-benchmark-study)
-    - [Motivation](#motivation)
+    - [Motivation](#2.1-motivation)
     - [Benchmark Performance](#benchmark-performance)
 3. [Data and Methods (Modeling)](#data-and-methods-(modeling))
     - [Data Overview](#data-overview)
