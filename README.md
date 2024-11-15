@@ -2,8 +2,7 @@
 
 **Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (Haochong) Xia, Jaxon Yue**
 
-**Link to Final Project for IDS 707 Data Visualization Course**
-[Data Visualization (For IDS 707 Final)](#4-1-1-data-visualization-for-ids-707-final)
+**(Include Final Project for IDS 707 Data Visualization Course)**
 
 ## Index
 
