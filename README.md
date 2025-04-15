@@ -2,6 +2,12 @@
 
 **Capstone project delivered by Kelly (Hoi Mei) Tong, Annie (Xueqing) Wu, Harry (Haochong) Xia, Jaxon Yue**
 
+The Socialinsider prediction problem is divided into 3 unique prediction projects. The first project is the `user conversion rate prediction project` which is described and demonstrated in this exact Github repository. The second and third projects are focusing on `performance matrices predivtion project` which include predicting future `followers` and `engagement` of a social media profile. These projects can be found in details here: 
+
+`Project 2 Follower Prediction Project`: https://github.com/hxia5/Follower_project
+
+`Project 3 Engagement Prediction Project`: https://github.com/XueqingWu/Capstone_Project_Engagement_Prediction
+
 **(Include Final Project for IDS 707 Data Visualization Course)**
 
 ## Index
